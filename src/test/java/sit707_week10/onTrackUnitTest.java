@@ -21,7 +21,6 @@ public class onTrackUnitTest {
         Unit unit = new Unit(unitTitle, unitCode, unitTrimester, taskList);
 
         Assert.assertNotNull(unit);
-        fail();
     }
     
     @Test
@@ -40,8 +39,6 @@ public class onTrackUnitTest {
         Assert.assertEquals("Software Quality and Testing", unitTitle);
         Assert.assertEquals("SIT707", unitCode);
         Assert.assertEquals("T1, 2024", unitTrimester);
-
-        fail();
     }
 
     @Test
@@ -64,7 +61,5 @@ public class onTrackUnitTest {
         List<Task> testTaskList = unit.getTasks();
 
         Assert.assertEquals(taskList, testTaskList);
-
-        fail();
     }
 }
